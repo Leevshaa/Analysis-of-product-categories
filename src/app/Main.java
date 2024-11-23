@@ -20,7 +20,7 @@ public class Main {
                 .collect(Collectors.groupingBy(Product::getCategory));
 
         System.out.println("\nПродукти мають такі категорії: ");
-        groupedByCategory.keySet().forEach(System.out::println);
+        groupedByCategory.keySet().forEach(System.out::println); // Робимо красивий вивід за допомогою методу .forEach
 
         // Знаходимо середнє арифметичне вартості в кожній категорії
         Map<String, Double> averagePriceByCategory = products.stream()
